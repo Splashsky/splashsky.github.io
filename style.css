@@ -1,5 +1,11 @@
 html, body {
   background-color: #ededed;
+  font-family: -apple-system,
+        system-ui,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        'OpenSans',
+        'Helvetica Neue', 'Arial', sans-serif;
 }
 .container {
   max-width: 960px;
