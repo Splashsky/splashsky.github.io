@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 html, body {
-    background-color: white;
+    background-color: #ededed;
     color: #545859;
 }
 header {
@@ -164,7 +164,7 @@ textarea#result {
     border-radius: 2px;
 }
 .button:hover, .button:active {
-    background-color: white;
+    background-color: #ededed;
     color: #0061AA;
     cursor: pointer;
     border: 2px solid #0061AA;
