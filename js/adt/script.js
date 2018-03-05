@@ -8,7 +8,7 @@ var acct = document.getElementById('acct');
 var issue = document.getElementById('issue');
 var clear = document.getElementById('clear');
 
-var clipboard = new ClipboardJS('#button', {
+var clipboard = new ClipboardJS(document.getElementById('button'), {
     text: function() {
         return `Name: ${name.value}\n`
                + `Cust#: ${num.value}\n`
