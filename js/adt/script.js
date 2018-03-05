@@ -10,7 +10,7 @@ var result = document.getElementById('result');
 var clear = document.getElementById('clear');
 
 var clipboard = new ClipboardJS('.button', {
-    text: function(trigger) {
+    text: function() {
         return `Name: ${name.value}\n`
                + `Cust#: ${num.value}\n`
                + `Address: ${addr.value}\n`
@@ -28,6 +28,9 @@ clipboard.on('success', function(e) {
     setTimeout(function() {
         button.innerHTML = "Copy";
     }, 2000);
+});
+clipboard.on('error', function(e) {
+    console.log(e);
 });
 
 clear.addEventListener('click', function(event) {
