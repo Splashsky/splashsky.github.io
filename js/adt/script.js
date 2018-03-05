@@ -34,6 +34,7 @@ function setup() {
 
     clear.addEventListener('click', function(event) {
         document.getElementById('form').reset();
+        result.value = "";
     }, false);
 }
 
