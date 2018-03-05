@@ -10,7 +10,7 @@ function setup() {
     var issue = document.getElementById('issue');
 
     function set() {
-        var element = document.getElementById('textarea');
+        var element = document.getElementById('result');
         var format = `Name: ${name.value}\n`
                      + `Cust#: ${num.value}\n`
                      + `Address: ${addr.value}\n`
