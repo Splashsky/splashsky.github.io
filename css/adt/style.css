@@ -152,8 +152,7 @@ textarea#result {
     resize: none;
 }
 .button {
-    display: block;
-    margin: 0px auto;
+    display: inline-block;
     margin-top: 1em;
     padding: 0.5em 1em;
     color: white;
@@ -168,4 +167,15 @@ textarea#result {
     color: #0061AA;
     cursor: pointer;
     border: 2px solid #0061AA;
+}
+.button#button {
+    margin-right: 1em;
+}
+.button#clear {
+    background-color: #FF8D6D;
+}
+.button#clear:hover, .button#clear:active, .button#clear:focus {
+    background-color: #ededed;
+    color: #FF8D6D;
+    border: 2px solid #FF8D6D;
 }
