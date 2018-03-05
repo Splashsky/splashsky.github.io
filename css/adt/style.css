@@ -3,7 +3,7 @@
 }
 html, body {
     background-color: white;
-    color: #545859
+    color: #545859;
 }
 header {
     height: 160px;
@@ -131,7 +131,7 @@ textarea {
     resize: vertical;
     outline: none;
     padding: 0.5em;
-    border: 1px solid #ccc;
+    border: 1px solid #545859;
     border-radius: 2px;
     box-sizing: border-box;
 }
