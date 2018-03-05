@@ -1,20 +1,10 @@
 function clear() {
-    var inputs = document.getElementsByClassName('input');
-    var name = document.getElementById('name');
-    var num = document.getElementById('num');
-    var addr = document.getElementById('addr');
-    var phn = document.getElementById('phn');
-    var csn = document.getElementById('csn');
-    var branch = document.getElementById('branch');
-    var acct = document.getElementById('acct');
-    var issue = document.getElementById('issue');
-    var result = document.getElementById('result');
-    
-    for(var input of inputs) {
-        input.value = "";
-    }
+    var form = document.getElementById('form');
+    var elements = form.elements;
 
-    result.value = "";
+    for(var element of elements) {
+        element.value = "";
+    }
 }
 
 function setup() {
