@@ -1,16 +1,24 @@
-function setup() {
-    var inputs = document.getElementsByClassName('input');
-    var name = document.getElementById('name');
-    var num = document.getElementById('num');
-    var addr = document.getElementById('addr');
-    var phn = document.getElementById('phn');
-    var csn = document.getElementById('csn');
-    var branch = document.getElementById('branch');
-    var acct = document.getElementById('acct');
-    var issue = document.getElementById('issue');
+var inputs = document.getElementsByClassName('input');
+var name = document.getElementById('name');
+var num = document.getElementById('num');
+var addr = document.getElementById('addr');
+var phn = document.getElementById('phn');
+var csn = document.getElementById('csn');
+var branch = document.getElementById('branch');
+var acct = document.getElementById('acct');
+var issue = document.getElementById('issue');
+var result = document.getElementById('result');
 
+function clear() {
+    for(var input of inputs) {
+        input.value = "";
+    }
+
+    result.value = "";
+}
+
+function setup() {
     function set() {
-        var element = document.getElementById('result');
         var format = `Name: ${name.value}\n`
                      + `Cust#: ${num.value}\n`
                      + `Address: ${addr.value}\n`
@@ -19,7 +27,7 @@ function setup() {
                      + `Branch: ${branch.value}\n`
                      + `MMB/Inf: ${acct.value}\n`
                      + `Issue: ${issue.value}`;
-        element.value = format;
+        result.value = format;
     }
 
     for(var input of inputs) {
