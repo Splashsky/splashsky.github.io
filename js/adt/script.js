@@ -24,9 +24,9 @@ var clipboard = new ClipboardJS(copy, {
 
 clipboard.on('success', function(e) {
     console.log(e);
-    button.innerHTML = "Copied!";
+    copy.innerHTML = "Copied!";
     setTimeout(function() {
-        button.innerHTML = "Copy";
+        copy.innerHTML = "Copy";
     }, 2000);
 });
 clipboard.on('error', function(e) {
