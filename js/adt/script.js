@@ -2,6 +2,8 @@ function clear() {
     var form = document.getElementById('form');
     var elements = form.elements;
 
+    form.reset();
+
     for(var element of elements) {
         element.value = "";
     }
