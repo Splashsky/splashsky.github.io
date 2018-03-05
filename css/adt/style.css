@@ -162,7 +162,7 @@ textarea#result {
     border: 2px solid transparent;
     border-radius: 2px;
 }
-.button:hover, .button:active, .button:focus {
+.button:hover, .button:active {
     background-color: #ededed;
     color: #0061AA;
     cursor: pointer;
@@ -174,7 +174,7 @@ textarea#result {
 .button#clear {
     background-color: #FF8D6D;
 }
-.button#clear:hover, .button#clear:active, .button#clear:focus {
+.button#clear:hover, .button#clear:active {
     background-color: #ededed;
     color: #FF8D6D;
     border: 2px solid #FF8D6D;
