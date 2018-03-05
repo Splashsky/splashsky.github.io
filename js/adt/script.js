@@ -1,4 +1,5 @@
 function clear() {
+    console.log('clearing form...');
     var form = document.getElementById('form');
     var elements = form.elements;
 
