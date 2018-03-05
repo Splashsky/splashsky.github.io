@@ -10,14 +10,7 @@ var clear = document.getElementById('clear');
 
 var clipboard = new ClipboardJS('.button', {
     text: function() {
-        return `Name: ${name.value}\n`
-               + `Cust#: ${num.value}\n`
-               + `Address: ${addr.value}\n`
-               + `Phone#: ${phn.value}\n`
-               + `CS#: ${csn.value}\n`
-               + `Branch: ${branch.value}\n`
-               + `MMB/Inf: ${acct.value}\n`
-               + `Issue: ${issue.value}`;
+        return 'A string.';
     }
 });
 
