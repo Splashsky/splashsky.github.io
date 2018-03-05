@@ -3,7 +3,7 @@
 <head>
 	<title>ADT Customer Formatter</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
 	<link rel="stylesheet" type="text/css" href="css/adt/style.css"/>
 
@@ -41,21 +41,27 @@
 						<input id="acct"     class="input" type="text" placeholder="MMB / Informix">
 						<textarea id="issue" class="input" placeholder="What's the issue?"></textarea>
 					</form>
+					<div style="text-align: center;">
+						<button id="button" class="button" data-clipboard-target="#result">Copy</button>
+						<button id="clear" class="button">Clear</button>
+					</div>
 				</div>
 
 				<div class="cell of-2">
-					<div class="grid" style="height: 100%;">
-						<div class="row is-column" style="height: 100%;">
-							<div class="cell fill">
-								<textarea id="result" readonly></textarea>
-							</div>
-
-							<div class="cell fit" style="text-align: center;">
-								<button id="button" class="button" data-clipboard-target="#result">Copy</button>
-								<button id="clear" class="button">Clear</button>
-							</div>
-						</div>
-					</div>
+					<h3>What is this?</h3>
+					<p>
+						This is a tool for the ADT Account Management team to
+						format their questions specifically for the internal
+						assist chat. It simply helps things keep organized and
+						consistent!
+					</p>
+					<h3>How do I use it?</h3>
+					<p>
+						Simply fill out the form to the left and click the Copy
+						button below! If it was successful, the button will say
+						'Copied!" and you'll be able to paste the result into
+						Skype.
+					</p>
 				</div>
 			</div>
 

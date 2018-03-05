@@ -116,7 +116,7 @@ form input[type="text"] {
 }
 form input {
     outline: none;
-    border: 1px solid #EAEEF5;
+    border: 1px solid #545859;
     border-radius: 2px;
     box-sizing: border-box;
 }
@@ -131,7 +131,7 @@ textarea {
     resize: vertical;
     outline: none;
     padding: 0.5em;
-    border: 1px solid #EAEEF5;
+    border: 1px solid #545859;
     border-radius: 2px;
     box-sizing: border-box;
 }
