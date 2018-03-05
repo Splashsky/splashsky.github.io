@@ -1,15 +1,15 @@
-var inputs = document.getElementsByClassName('input');
-var name = document.getElementById('name');
-var num = document.getElementById('num');
-var addr = document.getElementById('addr');
-var phn = document.getElementById('phn');
-var csn = document.getElementById('csn');
-var branch = document.getElementById('branch');
-var acct = document.getElementById('acct');
-var issue = document.getElementById('issue');
-var result = document.getElementById('result');
-
 function clear() {
+    var inputs = document.getElementsByClassName('input');
+    var name = document.getElementById('name');
+    var num = document.getElementById('num');
+    var addr = document.getElementById('addr');
+    var phn = document.getElementById('phn');
+    var csn = document.getElementById('csn');
+    var branch = document.getElementById('branch');
+    var acct = document.getElementById('acct');
+    var issue = document.getElementById('issue');
+    var result = document.getElementById('result');
+    
     for(var input of inputs) {
         input.value = "";
     }
@@ -18,6 +18,17 @@ function clear() {
 }
 
 function setup() {
+    var inputs = document.getElementsByClassName('input');
+    var name = document.getElementById('name');
+    var num = document.getElementById('num');
+    var addr = document.getElementById('addr');
+    var phn = document.getElementById('phn');
+    var csn = document.getElementById('csn');
+    var branch = document.getElementById('branch');
+    var acct = document.getElementById('acct');
+    var issue = document.getElementById('issue');
+    var result = document.getElementById('result');
+
     function set() {
         var format = `Name: ${name.value}\n`
                      + `Cust#: ${num.value}\n`
