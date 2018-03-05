@@ -6,9 +6,11 @@ var csn = document.getElementById('csn');
 var branch = document.getElementById('branch');
 var acct = document.getElementById('acct');
 var issue = document.getElementById('issue');
+var result = document.getElementById('result');
 var clear = document.getElementById('clear');
+var copy = document.getElementById('button');
 
-var clipboard = new ClipboardJS(document.getElementById('button'), {
+var clipboard = new ClipboardJS(copy, {
     text: function() {
         return `Name: ${name.value}\n`
                + `Cust#: ${num.value}\n`
@@ -34,4 +36,5 @@ clipboard.on('error', function(e) {
 
 clear.addEventListener('click', function(event) {
     document.getElementById('form').reset();
+    result.value = "";
 }, false);
