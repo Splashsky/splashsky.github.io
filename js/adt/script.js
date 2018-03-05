@@ -1,15 +1,3 @@
-function clear() {
-    console.log('clearing form...');
-    var form = document.getElementById('form');
-    var elements = form.elements;
-
-    form.reset();
-
-    for(var element of elements) {
-        element.value = "";
-    }
-}
-
 function setup() {
     var inputs = document.getElementsByClassName('input');
     var name = document.getElementById('name');
@@ -21,6 +9,7 @@ function setup() {
     var acct = document.getElementById('acct');
     var issue = document.getElementById('issue');
     var result = document.getElementById('result');
+    var clear = document.getElementById('clear');
 
     function set() {
         var format = `Name: ${name.value}\n`
@@ -42,6 +31,10 @@ function setup() {
             set();
         }, false);
     }
+
+    clear.addEventListener('click', function(event) {
+        document.getElementById('form').reset();
+    }, false);
 }
 
 setup();
