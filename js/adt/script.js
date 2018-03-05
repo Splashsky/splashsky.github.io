@@ -1,4 +1,4 @@
-var name = document.getElementById('name');
+var cust = document.getElementById('cust');
 var num = document.getElementById('num');
 var addr = document.getElementById('addr');
 var phn = document.getElementById('phn');
@@ -11,7 +11,7 @@ var copy = document.getElementById('copy');
 
 var clipboard = new ClipboardJS(copy, {
     text: function() {
-        return `Name: ${name.value}\n`
+        return `Name: ${cust.value}\n`
                + `Cust#: ${num.value}\n`
                + `Address: ${addr.value}\n`
                + `Phone#: ${phn.value}\n`
