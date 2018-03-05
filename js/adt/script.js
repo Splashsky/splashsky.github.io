@@ -1,11 +1,5 @@
-function copy() {
-    var text = document.getElementById('textarea');
-    text.select();
-    document.execCommand('Copy');
-}
-
 function setup() {
-    var inputs = document.getElementsByTagName('input');
+    var inputs = document.getElementsByClassName('input');
     var name = document.getElementById('name');
     var num = document.getElementById('num');
     var addr = document.getElementById('addr');
@@ -13,6 +7,7 @@ function setup() {
     var csn = document.getElementById('csn');
     var branch = document.getElementById('branch');
     var acct = document.getElementById('acct');
+    var issue = document.getElementById('issue');
 
     function set() {
         var element = document.getElementById('textarea');
@@ -22,7 +17,8 @@ function setup() {
                      + `Phone#: ${phn.value}\n`
                      + `CS#: ${csn.value}\n`
                      + `Branch: ${branch.value}\n`
-                     + `MMB/Inf: ${acct.value}\n`;
+                     + `MMB/Inf: ${acct.value}\n`
+                     + `Issue: ${issue.value}`;
         element.value = format;
     }
 

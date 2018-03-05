@@ -31,13 +31,14 @@
 			<div class="row has-gutters">
 				<div class="cell of-2">
 					<form>
-						<input id="name" type="text" placeholder="Customer Name">
-						<input id="num" type="text" placeholder="Customer Number">
-						<input id="addr" type="text" placeholder="Address">
-						<input id="phn" type="text" placeholder="Phone Number">
-						<input id="csn" type="text" placeholder="CS Number">
-						<input id="branch" type="text" placeholder="Branch Number">
-						<input id="acct" type="text" placeholder="MMB / Informix">
+						<input id="name"     class="input" type="text" placeholder="Customer Name">
+						<input id="num"      class="input" type="text" placeholder="Customer Number">
+						<input id="addr"     class="input" type="text" placeholder="Address">
+						<input id="phn"      class="input" type="text" placeholder="Phone Number">
+						<input id="csn"      class="input" type="text" placeholder="CS Number">
+						<input id="branch"   class="input" type="text" placeholder="Branch Number">
+						<input id="acct"     class="input" type="text" placeholder="MMB / Informix">
+						<textarea id="issue" class="input" placeholder="What's the issue?"></textarea>
 					</form>
 				</div>
 
@@ -45,11 +46,11 @@
 					<div class="grid" style="height: 100%;">
 						<div class="row is-column" style="height: 100%;">
 							<div class="cell fill">
-								<textarea id="textarea" readonly></textarea>
+								<textarea id="result" readonly></textarea>
 							</div>
 
 							<div class="cell fit">
-								<button id="button" class="button" data-clipboard-target="#textarea">Copy</button>
+								<button id="button" class="button" data-clipboard-target="#result">Copy</button>
 							</div>
 						</div>
 					</div>
