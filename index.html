@@ -3,45 +3,63 @@
 <head>
 	<title>ADT Customer Formatter</title>
 
-	<link rel="stylesheet" type="text/css" href="normalize.css"/>
-	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="css/adt/style.css"/>
+
+	<script src="js/adt/clipboard.min.js"></script>
 </head>
 
 <body>
-	<h1>ADT Customer Formatter</h1>
+	<header>
+		<h1>ADT Assist Chat Format</h1>
+	</header>
+
+	<script>
+		var clipboard = new ClipboardJS('.button');
+
+		clipboard.on('success', function(e) {
+			console.log(e);
+		});
+	</script>
 
 	<div class="container small">
-	  <div class="grid">
-	    <div class="row has-gutters">
-	      <div class="cell of-2">
-		<form>
-		  <input id="name" type="text" placeholder="Customer Name">
-		  <input id="num" type="text" placeholder="Customer Number">
-		  <input id="addr" type="text" placeholder="Address">
-		  <input id="phn" type="text" placeholder="Phone Number">
-		  <input id="csn" type="text" placeholder="CS Number">
-		  <input id="branch" type="text" placeholder="Branch Number">
-		  <input id="acct" type="text" placeholder="MMB / Informix">
-		</form>
-	      </div>
+		<div class="grid">
+			<div class="row has-gutters">
+				<div class="cell of-2">
+					<form>
+						<input id="name" type="text" placeholder="Customer Name">
+						<input id="num" type="text" placeholder="Customer Number">
+						<input id="addr" type="text" placeholder="Address">
+						<input id="phn" type="text" placeholder="Phone Number">
+						<input id="csn" type="text" placeholder="CS Number">
+						<input id="branch" type="text" placeholder="Branch Number">
+						<input id="acct" type="text" placeholder="MMB / Informix">
+					</form>
+				</div>
 
-	      <div class="cell of-2">
-		<div class="grid" style="height: 100%;">
-		  <div class="row is-column" style="height: 100%;">
-		    <div class="cell fill">
-		      <textarea id="textarea" readonly></textarea>
-		    </div>
+				<div class="cell of-2">
+					<div class="grid" style="height: 100%;">
+						<div class="row is-column" style="height: 100%;">
+							<div class="cell fill">
+								<textarea id="textarea" readonly></textarea>
+							</div>
 
-		    <div class="cell fit">
-		      <button class="button" onclick="copy()">Copy</button>
-		    </div>
-		  </div>
+							<div class="cell fit">
+								<button class="button" data-clipboard-target="#textarea">Copy</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer class="row">
+				<div class="cell">
+					Copyright &copy; 2018, Skylear Johnson. ADT and all related indicia are the property of ADT LLC.
+				</div>
+			</footer>
 		</div>
-	      </div>
-	    </div>
-	  </div>
 	</div>
-	
-	<script src="script.js"></script>
+
+	<script src="js/adt/script.js"></script>
 </body>
 </html>
