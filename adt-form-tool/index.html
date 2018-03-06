@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Splashsky > ADT Assist Chat Format</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+	<script src="js/clipboard.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>ADT Assist Chat Format</h1>
+	</header>
+
+	<div class="container small">
+		<div class="grid">
+			<div class="row has-gutters">
+				<div class="cell of-2">
+					<form id="form">
+						<input id="cust"     class="input" type="text" placeholder="Customer Name">
+						<input id="num"      class="input" type="text" placeholder="Customer Number">
+						<input id="addr"     class="input" type="text" placeholder="Address">
+						<input id="phn"      class="input" type="text" placeholder="Phone Number">
+						<input id="csn"      class="input" type="text" placeholder="CS Number">
+						<input id="branch"   class="input" type="text" placeholder="Branch Number">
+						<input id="acct"     class="input" type="text" placeholder="MMB / Informix">
+						<textarea id="issue" class="input" placeholder="What's the issue?"></textarea>
+					</form>
+					<div style="text-align: center;">
+						<button id="copy" class="button">Copy</button>
+						<button id="clear" class="button">Clear</button>
+					</div>
+				</div>
+
+				<div class="cell of-2">
+					<h3>What is this?</h3>
+					<p>
+						This is a tool for the ADT Account Management team to
+						format their questions specifically for the internal
+						assist chat. It simply helps things keep organized and
+						consistent!
+					</p>
+					<h3>How do I use it?</h3>
+					<p>
+						Simply fill out the form to the left and click the Copy
+						button below! If it was successful, the button will say
+						'Copied!" and you'll be able to paste the result into
+						Skype.
+					</p>
+				</div>
+			</div>
+
+			<footer class="row">
+				<div class="cell">
+					Copyright &copy; 2018, Skylear Johnson. ADT and all related indicia are the property of ADT LLC.
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
