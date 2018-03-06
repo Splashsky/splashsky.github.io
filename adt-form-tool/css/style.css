@@ -198,6 +198,9 @@ pre > code {
 .grid > .row.end-stuff {
     align-items: flex-end;
 }
+form.hidden {
+    display: none;
+}
 form input[type="text"] {
     display: block;
     width: 100%;

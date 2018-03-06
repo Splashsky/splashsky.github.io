@@ -9,6 +9,38 @@ var issue = document.getElementById('issue');
 var clear = document.getElementById('clear');
 var copy = document.getElementById('copy');
 
+var amform = document.getElementById('am');
+var reform = document.getElementById('re');
+
+function hide(element) {
+    if(!element.classList.contains('hide')) {
+        element.classList.add('hide');
+    }
+}
+
+function show(element) {
+    if(element.classList.contains('hide')) {
+        element.classList.remove('hide');
+    }
+}
+
+window.onload = function() {
+    var hash = (window.location.hash).replace('#', '');
+    if(hash.length == 0) {
+        return;
+    } else {
+        if(hash == 'am') {
+            hide(reform);
+            show(amform);
+        }
+        if(hash == 're') {
+            hide(amform);
+            show(reform);
+        }
+        return;
+    }
+}
+
 var clipboard = new ClipboardJS(copy, {
     text: function() {
         return `--- AACF ----\n`
