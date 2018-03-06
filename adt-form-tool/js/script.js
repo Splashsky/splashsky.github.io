@@ -11,7 +11,8 @@ var copy = document.getElementById('copy');
 
 var clipboard = new ClipboardJS(copy, {
     text: function() {
-        return `Name: ${cust.value}\n`
+        return `--- AACF ----`
+               + `Name: ${cust.value}\n`
                + `Cust#: ${num.value}\n`
                + `Address: ${addr.value}\n`
                + `Phone#: ${phn.value}\n`
