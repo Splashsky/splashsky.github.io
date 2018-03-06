@@ -13,14 +13,14 @@ var amform = document.getElementById('am');
 var reform = document.getElementById('re');
 
 function hide(element) {
-    if(!element.classList.contains('hide')) {
-        element.classList.add('hide');
+    if(!element.classList.contains('hidden')) {
+        element.classList.add('hidden');
     }
 }
 
 function show(element) {
-    if(element.classList.contains('hide')) {
-        element.classList.remove('hide');
+    if(element.classList.contains('hidden')) {
+        element.classList.remove('hidden');
     }
 }
 
