@@ -13,14 +13,29 @@
 </head>
 
 <body>
-	<header>
-		<h1>ADT Assist Chat Format</h1>
-	</header>
-
 	<div class="container small">
 		<div class="grid">
-			<div class="row has-gutters">
-				<div class="cell of-2">
+			<header class="row">
+				<div class="cell fit logo">
+					<img src="css/adt-standard.png" />
+				</div>
+				<div class="cell fill wordmark">
+					<h1>Formatter</h1>
+				</div>
+			</header>
+
+			<nav class="row">
+				<div class="cell">
+					<ul>
+						<li><a href="#">Account Management</a></li>
+						<li><a href="#">Relocation</a></li>
+						<li><a href="#">Call Pull Email (wip)</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="row body has-gutters">
+				<div class="cell">
 					<form id="form">
 						<input id="cust"     class="input" type="text" placeholder="Customer Name">
 						<input id="num"      class="input" type="text" placeholder="Customer Number">
@@ -31,39 +46,41 @@
 						<input id="acct"     class="input" type="text" placeholder="MMB / Informix">
 						<textarea id="issue" class="input" placeholder="What's the issue?"></textarea>
 					</form>
-					<div style="text-align: center;">
+					<div class="buttons">
 						<button id="copy" class="button">Copy</button>
 						<button id="clear" class="button">Clear</button>
 					</div>
 				</div>
 
-				<div class="cell of-2">
+				<div class="cell">
 					<h3>What is this?</h3>
 					<p>
-						This is a tool for the ADT Account Management team to
-						format their questions specifically for the internal
-						assist chat. It simply helps things keep organized and
-						consistent!
+						This is a tool for the ADT call center teams to
+						format various customer information specifically for
+						internal processes. It simply helps things stay organized
+						and consistent!
 					</p>
 					<h3>How do I use it?</h3>
 					<p>
 						Simply fill out the form to the left and click the Copy
 						button below! If it was successful, the button will say
-						'Copied!" and you'll be able to paste the result into
-						Skype.
+						"Copied!" and you'll be able to paste the result wherever
+						you need to. Click the clear button to clear the form.
+						Click the links above to change the format!
 					</p>
 					<h3>Do you store anything?</h3>
 					<p>
-						Not at all. There's no information being stored, there's
+						Not at all. There's no information being stored. There's
 						not even any cookies on this page. All the stuff you input
-						simply disappears.
+						simply disappears. If you want to check the code for this
+						program, <a href="https://github.com/Splashsky/splashsky.github.io/tree/master/adt-form-tool">click here</a>!
 					</p>
 				</div>
 			</div>
 
 			<footer class="row">
 				<div class="cell">
-					Copyright &copy; 2018, Skylear Johnson. ADT and all related indicia are the property of ADT LLC.
+					Copyright &copy; 2018, Skylear Johnson. ADT and all related indicia are property of ADT LLC.
 				</div>
 			</footer>
 		</div>
