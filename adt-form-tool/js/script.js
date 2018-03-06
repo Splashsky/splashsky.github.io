@@ -26,14 +26,18 @@ function show(element) {
 
 window.onload = function() {
     var hash = (window.location.hash).replace('#', '');
+    console.log('testing hash...');
     if(hash.length == 0) {
+        console.log('empty hash...');
         return;
     } else {
         if(hash == 'am') {
+            console.log('am hash...');
             hide(reform);
             show(amform);
         }
         if(hash == 're') {
+            console.log('re hash...');
             hide(amform);
             show(reform);
         }
