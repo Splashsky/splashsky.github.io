@@ -6,7 +6,7 @@ var csn = document.getElementById('csn');
 var branch = document.getElementById('branch');
 var acct = document.getElementById('acct');
 var issue = document.getElementById('issue');
-var clear = document.getElementById('clear');
+var amclear = document.getElementById('amclear');
 var amcopy = document.getElementById('amcopy');
 
 var amform = document.getElementById('am');
@@ -51,7 +51,7 @@ window.onhashchange = function() {
     switchTo(hash);
 }
 
-var clipboard = new ClipboardJS(amcopy, {
+var amclipboard = new ClipboardJS(amcopy, {
     text: function() {
         return `---- Acct Mgmt ----\n`
                + `Name: ${cust.value}\n`
@@ -65,17 +65,17 @@ var clipboard = new ClipboardJS(amcopy, {
     }
 });
 
-clipboard.on('success', function(e) {
+amclipboard.on('success', function(e) {
     console.log(e);
-    copy.innerHTML = "Copied!";
+    amcopy.innerHTML = "Copied!";
     setTimeout(function() {
-        copy.innerHTML = "Copy";
+        amcopy.innerHTML = "Copy";
     }, 2000);
 });
-clipboard.on('error', function(e) {
+amclipboard.on('error', function(e) {
     console.log(e);
 });
 
-clear.addEventListener('click', function(event) {
+amclear.addEventListener('click', function(event) {
     document.getElementById('form').reset();
 }, false);
