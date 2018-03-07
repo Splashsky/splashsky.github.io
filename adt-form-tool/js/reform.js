@@ -7,12 +7,12 @@ var reClear  = document.getElementById('reclear');
 var reClipboard = new ClipboardJS(reCopy, {
     text: function() {
         return `---- Relocation ----\n`
-               + `Name: ${amInputs[0].value}\n`
-               + `Cust#: ${amInputs[1].value}\n`
-               + `Site#: ${amInputs[2].value}\n`
-               + `Address: ${amInputs[3].value}\n`
-               + `Phone#: ${amInputs[4].value}\n`
-               + `Question: ${amInputs[5].value}\n`
+               + `Name: ${reInputs[0].value}\n`
+               + `Cust#: ${reInputs[1].value}\n`
+               + `Site#: ${reInputs[2].value}\n`
+               + `Address: ${reInputs[3].value}\n`
+               + `Phone#: ${reInputs[4].value}\n`
+               + `Question: ${reInputs[5].value}\n`
     }
 });
 
