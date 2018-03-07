@@ -80,4 +80,11 @@ amclear.addEventListener('click', function(event) {
 
 amcopy.addEventListener('click', function(event) {
     console.log(amInputs[0].value);
+    console.log(amInputs[1].value);
+    console.log(amInputs[2].value);
+    console.log(amInputs[3].value);
+    console.log(amInputs[4].value);
+    console.log(amInputs[5].value);
+    console.log(amInputs[6].value);
+    console.log(amInputs[7].value);
 }, false);
