@@ -24,25 +24,31 @@ function show(element) {
     }
 }
 
-window.onload = function() {
-    var hash = (window.location.hash).replace('#', '');
-    console.log('testing hash...');
-    if(hash.length == 0) {
-        console.log('empty hash...');
-        return;
-    } else {
-        if(hash == 'am') {
-            console.log('am hash...');
+function switchTo(hash) {
+    switch(hash) {
+        case '#am':
             hide(reform);
             show(amform);
-        }
-        if(hash == 're') {
-            console.log('re hash...');
+            break;
+        case '#re':
             hide(amform);
             show(reform);
-        }
-        return;
+            break;
     }
+}
+
+window.onload = function() {
+    var hash = window.location.hash;
+    if(hash == '#') {
+        return;
+    } else {
+        switchTo(hash);
+    }
+}
+
+window.onhashchange = function() {
+    var hash = window.location.hash;
+    switchTo(hash);
 }
 
 var clipboard = new ClipboardJS(copy, {
