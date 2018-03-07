@@ -25,12 +25,12 @@ function show(element) {
 function switchTo(hash) {
     switch(hash) {
         case '#am':
-            hide(reform);
-            show(amform);
+            hide(reForm);
+            show(amForm);
             break;
         case '#re':
-            hide(amform);
-            show(reform);
+            hide(amForm);
+            show(reForm);
             break;
     }
 }
@@ -49,42 +49,36 @@ window.onhashchange = function() {
     switchTo(hash);
 }
 
-/*var amclipboard = new ClipboardJS(amcopy, {
+var amClipboard = new ClipboardJS(amCopy, {
     text: function() {
         return `---- Acct Mgmt ----\n`
-               + `Name: ${cust.value}\n`
-               + `Cust#: ${num.value}\n`
-               + `Address: ${addr.value}\n`
-               + `Phone#: ${phn.value}\n`
-               + `CS#: ${csn.value}\n`
-               + `Branch: ${branch.value}\n`
-               + `MMB/Inf: ${acct.value}\n`
-               + `Issue: ${issue.value}`;
+               + `Name: ${amInputs[0].value}\n`
+               + `Cust#: ${amInputs[1].value}\n`
+               + `Address: ${amInputs[2].value}\n`
+               + `Phone#: ${amInputs[3].value}\n`
+               + `CS#: ${amInputs[4].value}\n`
+               + `Branch: ${amInputs[5].value}\n`
+               + `MMB/Inf: ${amInputs[6].value}\n`
+               + `Issue: ${amInputs[7].value}`;
     }
 });
 
-amclipboard.on('success', function(e) {
+amClipboard.on('success', function(e) {
     console.log(e);
-    amcopy.innerHTML = "Copied!";
+    amCopy.innerHTML = "Copied!";
     setTimeout(function() {
-        amcopy.innerHTML = "Copy";
-    }, 2000);
+        amCopy.innerHTML = "Copy";
+    }, 2000);S
 });
-amclipboard.on('error', function(e) {
+amClipboard.on('error', function(e) {
     console.log(e);
 });
 
-amclear.addEventListener('click', function(event) {
-    document.getElementById('form').reset();
-}, false);*/
+amClear.addEventListener('click', function(event) {
+    event.preventDefault();
+    amForm.reset();
+}, false);
 
-amcopy.addEventListener('click', function(event) {
-    console.log(amInputs[0].value);
-    console.log(amInputs[1].value);
-    console.log(amInputs[2].value);
-    console.log(amInputs[3].value);
-    console.log(amInputs[4].value);
-    console.log(amInputs[5].value);
-    console.log(amInputs[6].value);
-    console.log(amInputs[7].value);
+amCopy.addEventListener('click', function(event) {
+    event.preventDefault();
 }, false);
