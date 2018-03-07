@@ -7,7 +7,7 @@ var branch = document.getElementById('branch');
 var acct = document.getElementById('acct');
 var issue = document.getElementById('issue');
 var clear = document.getElementById('clear');
-var copy = document.getElementById('copy');
+var amcopy = document.getElementById('amcopy');
 
 var amform = document.getElementById('am');
 var reform = document.getElementById('re');
@@ -51,9 +51,9 @@ window.onhashchange = function() {
     switchTo(hash);
 }
 
-var clipboard = new ClipboardJS(copy, {
+var clipboard = new ClipboardJS(amcopy, {
     text: function() {
-        return `--- AACF ----\n`
+        return `---- Acct Mgmt ----\n`
                + `Name: ${cust.value}\n`
                + `Cust#: ${num.value}\n`
                + `Address: ${addr.value}\n`
