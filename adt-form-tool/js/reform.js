@@ -1,6 +1,6 @@
 // Variables for Relocation form
 var reForm   = document.getElementById('re');
-var reInputs = amForm.querySelectorAll("input, textarea");
+var reInputs = reForm.querySelectorAll("input, textarea");
 var reCopy   = document.getElementById('recopy');
 var reClear  = document.getElementById('reclear');
 
