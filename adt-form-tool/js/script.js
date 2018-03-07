@@ -1,16 +1,14 @@
-var cust = document.getElementById('cust');
-var num = document.getElementById('num');
-var addr = document.getElementById('addr');
-var phn = document.getElementById('phn');
-var csn = document.getElementById('csn');
-var branch = document.getElementById('branch');
-var acct = document.getElementById('acct');
-var issue = document.getElementById('issue');
-var amclear = document.getElementById('amclear');
-var amcopy = document.getElementById('amcopy');
+// Variables for Account Management form
+var amForm   = document.getElementById('am');
+var amInputs = amForm.querySelectorAll("input, textarea");
+var amCopy   = document.getElementById('amcopy');
+var amClear  = document.getElementById('amclear');
 
-var amform = document.getElementById('am');
-var reform = document.getElementById('re');
+// Variables for Relocation form
+var reForm   = document.getElementById('re');
+var reInputs = amForm.querySelectorAll("input, textarea");
+var reCopy   = document.getElementById('recopy');
+var reClear  = document.getElementById('reclear');
 
 function hide(element) {
     if(!element.classList.contains('hidden')) {
@@ -51,7 +49,7 @@ window.onhashchange = function() {
     switchTo(hash);
 }
 
-var amclipboard = new ClipboardJS(amcopy, {
+/*var amclipboard = new ClipboardJS(amcopy, {
     text: function() {
         return `---- Acct Mgmt ----\n`
                + `Name: ${cust.value}\n`
@@ -78,4 +76,8 @@ amclipboard.on('error', function(e) {
 
 amclear.addEventListener('click', function(event) {
     document.getElementById('form').reset();
+}, false);*/
+
+amcopy.addEventListener('click', function(event) {
+    console.log(amInputs[0].value);
 }, false);

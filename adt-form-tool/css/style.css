@@ -198,6 +198,16 @@ pre > code {
 .grid > .row.end-stuff {
     align-items: flex-end;
 }
+a {
+    color: #545859;
+}
+a:hover {
+    cursor: pointer;
+    color: #0061AA !important;
+}
+a:visited {
+    color: #545859;
+}
 form.hidden {
     display: none;
 }
@@ -227,8 +237,6 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 2px;
     box-sizing: border-box;
-}
-textarea#issue {
     width: 100%;
     min-width: 100%;
     max-width: 100%;
@@ -253,13 +261,10 @@ textarea#issue {
     cursor: pointer;
     border: 2px solid #0061AA;
 }
-.button#button {
-    margin-right: 1em;
-}
-.button#clear {
+.button.clear {
     background-color: #FF8D6D;
 }
-.button#clear:hover, .button#clear:active {
+.button.clear:hover, .button.clear:active {
     background-color: #ededed;
     color: #FF8D6D;
     border: 2px solid #FF8D6D;
